@@ -31,19 +31,19 @@ Describe "$module PowerShell Module Tests" {
     }
 
 
-    $pubFunctions = ('Get-DOAccount.ps1',
-                    'Get-DOAction.ps1',
-                    'Get-DORegions.ps1',
-                    'Get-DOVolume.ps1',
-                    'Get-DOVolumes.ps1',
-                    'Get-DOVolumeSnapshot.ps1',
-                    'New-DOVolume.ps1',
-                    'New-DOVolumeSnapshot.ps1',
-                    'Remove-DOVolume.ps1',
-                    'Remove-DOVolumeSnapshot.ps1'
+    $pubFunctions = ('Get-DOAccount',
+                    'Get-DOAction',
+                    'Get-DORegions',
+                    'Get-DOVolume',
+                    'Get-DOVolumes',
+                    'Get-DOVolumeSnapshot',
+                    'New-DOVolume',
+                    'New-DOVolumeSnapshot',
+                    'Remove-DOVolume',
+                    'Remove-DOVolumeSnapshot'
                 )
-    $privFunctions = ('Add-ObjectDetail.ps1',
-                        'Invoke-DOApi.ps1')
+    $privFunctions = ('Add-ObjectDetail',
+                        'Invoke-DOApi')
 
     foreach ($function in $pubFunctions)
     {
